@@ -1,0 +1,13 @@
+*.lnk
+*.pst
+*.swp
+*.temp
+*.tmp
+(?d).DS_Store
+(?d).*
+*-upload-tmp
+(?d)$RECYCLE.BIN
+(?d)System Volume Information
+(?d).iCloud
+~$*
+~tmp*
