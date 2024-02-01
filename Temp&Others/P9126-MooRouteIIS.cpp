@@ -1,53 +1,34 @@
 #include <iostream>
 #include <algorithm>
 #include <cstring>
+#include <vector>
 using namespace std;
 
-const int MAXN = 2e5+5;
+const int MAXN = 3e5+5;
 int n, m, ei;
 bool flag = true;
 struct route{
     int to;
-    int next;
     int due;
     int arrive;
-} routes[MAXN];
+};
 int c, r, d, s;
 int vis[MAXN], a[MAXN];
-int vertex[MAXN], ans[MAXN];
+int ans[MAXN], ind[MAXN];
+vector<route> map[MAXN];
 
-
-void add(int v1, int v2, int due, int arrive){
-    ei += 1;
-    routes[ei].to = v2;
-    routes[ei].next = vertex[v1];
-    routes[ei].due = due;
-    routes[ei].arrive = arrive;
-    vertex[v1] = ei;
-    return ;
+bool cmp(route a, route b){
+    return a.due <= b.due;
 }
 
-void dfs(int now, int time){
-    if (ans[now] != 0x7f7f7f7f && ans[now] > time) return ;
-    ans[now] = time;
-    time += a[now];
-    if (flag) {
-        time -= a[now];
-        flag = false;
+void dfs(int u, int t){
+    for (int i=ind[u]; i>=0; i--){
+        route next = map[u][i];
+        if (next.due < t) break;
+        ans[next.to] = min(ans[next.to], next.arrive);
+        ind[u] = i - 1;
+        dfs(next.to, next.arrive + a[next.to]);
     }
-    int index = vertex[now];
-    while(index){
-        int to = routes[index].to;
-        if (!vis[to]){
-            if (time <= routes[index].due){
-                vis[to] = 1;
-                dfs(to, routes[index].arrive);
-                vis[to] = 0;
-            }
-        }
-        index = routes[index].next;
-    }
-
     return ;
 }
 
@@ -55,11 +36,19 @@ int main(){
     scanf("%d %d", &n, &m);
     for (int i=1; i<=m; i++){
         scanf("%d %d %d %d", &c, &r, &d, &s);
-        add(c, d, r, s);
+        map[c].push_back((route){d, r, s});
     }
-    for (int i=1; i<=n; i++) scanf("%d", &a[i]);
-    memset(ans, 0x7f, sizeof ans);
+    
+    for (int i=1; i<=n; i++) {
+        scanf("%d", &a[i]);
+        ind[i] = map[i].size()-1;
+        ans[i] = 0x7f7f7f7f;    
+        sort(map[i].begin(), map[i].end(), cmp);
+    }
+
+    ans[1] = 0;
     dfs(1, 0);
+
     for (int i=1; i<=n; i++) {
         if (ans[i] == 0x7f7f7f7f) printf("-1\n");
         else printf("%d\n", ans[i]);
