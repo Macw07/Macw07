@@ -1,31 +1,53 @@
-### 吸取的教训
-##### - 记得开long long
-##### - 数组记得不要越界
-##### - 记得处理边界条件
-##### - 大规模数据记得看清题目取模
-##### - 输出的时候记得删除调试输出
-##### - 申明变量的时候记得赋0
-##### - 如果遇到小数的话，为了保证精度的问题，可以尝试将小数*1000
-##### - 考试计算机一般每秒处理$2*10^{8}$运算，防止TLE
----
-### 2023 年小目标
-##### - 动态规划
-##### - 深度优先搜索
-##### - 广度优先搜索
-##### - 数论/图算法
-##### - 多项式/快速傅立叶变换
-##### - 剩余的一堆杂七杂八的东西
-##### - 渴望能做蓝色和紫色的小题目们
----
-### Memo Log
-##### - 2023.02.19 动态规划没有我想象的那么简单
-##### - 2023.02.03 AK BLUE
-##### - 2023.01.31 逐渐开始依赖递归了
-##### - 2023.01.27 今日收获4点Copyright值
-##### - 2023.01.26 人生中第一道绿色的题
-##### - 2023.01.23 大过年的，还要刷题
-##### - 2023.01.15 动态规划 '-'
-##### - 2023.01.09 动态规划真令人伤心
-##### - 2023.01.06 放寒假了 Winter Holiday
-##### - 2023.01.04 这几天做题先缓一缓，打算去深造一下下
-##### - 2023.01.01 这两天快被DFS和BFS搞死了 -_-||
+# Welcome to My GitHub Profile!
+
+Hello! I'm Macw07, a passionate programmer and algorithm enthusiast. I enjoy exploring the intricacies of competitive programming and sharing insights on algorithm design.
+
+## Motto
+
+> When you can't find the sunshine, be the sunshine.
+
+There are two kinds of people in the world: those who dislike recursion, and those who disliked it but have come to love it again.
+
+```cpp
+#include <iostream>
+#define ever (int i=1; i<=100; i++)
+#define hope cout << "When you can't find the sunshine, be the sunshine." << endl;
+#define nonono cout << "Who will teach me C++?" << endl;
+using namespace std;
+
+int main() {
+    for ever hope
+    for ever nonono;
+    return 0;
+}
+```
+
+## About Me
+
+- **Programming Languages:** C++, Python, Java
+- **Interests:** Algorithm design, competitive programming, software development
+- **Blog:** [Macw07's Blog](https://macw07.org/)
+
+## Blog Highlights
+
+I regularly share articles on various topics, including:
+
+- **Number Theory:**
+  - [Chinese Remainder Theorem](https://macw07.org/number-theory/chinese-remainder-theorem)
+  - [Euclidean Algorithm](https://macw07.org/number-theory/euclidean-algorithm)
+  - [Applications of Mathematical Expectation in Algorithms](https://macw07.org/number-theory/expectation-in-algorithms)
+  - [Extended Euclidean Algorithm](https://macw07.org/number-theory/extended-euclidean-algorithm)
+- **Algorithm Techniques:**
+  - [Binary Search Interval Clarification](https://macw07.org/algorithms/binary-search-interval)
+  - [Sets and Union-Find](https://macw07.org/algorithms/union-find)
+  - [Introduction to Dynamic Programming](https://macw07.org/algorithms/dynamic-programming)
+  - [Fast Exponentiation and Matrix Exponentiation](https://macw07.org/algorithms/fast-exponentiation)
+  - [STL Template Library](https://macw07.org/algorithms/stl-template-library)
+- **Competitive Programming:**
+  - [USACO Competition Guidance and FAQs](https://macw07.org/competitive-programming/usaco-guidance)
+
+## Get in Touch
+
+- **GitHub:** [github.com/Macw07](https://github.com/Macw07)
+
+Feel free to explore my repositories and connect with me. Let's learn and grow together in the world of programming!
