@@ -1,8 +1,6 @@
 # Welcome to My GitHub Profile!
 
-Hello! I'm Macw07, a passionate programmer and algorithm enthusiast. I enjoy exploring the intricacies of competitive programming and sharing insights on algorithm design.
-
-## Motto
+Hello! I'm Macw07, a passionate programmer, algorithm enthusiast, and computer science educator. I enjoy exploring the intricacies of competitive programming, developing elegant solutions to complex problems, and sharing insights on algorithm design with the community.
 
 > When you can't find the sunshine, be the sunshine.
 
@@ -24,9 +22,10 @@ int main() {
 
 ## About Me
 
-- **Programming Languages:** C++, Python, Java
-- **Interests:** Algorithm design, competitive programming, software development
+- **Programming Languages:** C++, Python, Java, JavaScript, Node.js
+- **Interests:** Algorithm design, competitive programming, web development
 - **Blog:** [Macw07's Blog](https://macw07.org/)
+- **Current Focus:** Full Stack Web Projects
 
 ## Blog Highlights
 
